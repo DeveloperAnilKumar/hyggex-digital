@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.flip-card {
+  width: 712px;
+  height: 393.19px;
+  margin-top: 60px;
+  perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 20px;
+    border-radius: 42.51px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   
+
+  }
+  
+
+  .flip-card-front{
+    background: linear-gradient(222.94deg, #051A91 -4.31%, #061C93 14.41%, #2284F1 81.88%, #1F80EB 103.81%);
+  }
+
+  .flip-card-front {
+    background-color: white;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(222.94deg, #071844 -4.31%, #071844 -0.03%, #2D87B6 84.9%, #2D87B6 103.81%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-inner.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .gradient-border {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 1px 1px; 
+  }
+  
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit; 
+    background: linear-gradient(90.26deg, #217EEC -1.17%, #082299 102.11%);
+    z-index: -1;
+  }
+  
+  .gradient-border > * {
+    border-radius: 12px; 
+    background-color: white;
+  }
+  
+
+  .icon-container {
+    display: inline-block;
+}
+
+
+
+.flashcard {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(180deg, #06286E 0%, #164EC0 100%);
+  font-size: 28px;
+  line-height: 33.89px;
+  font-weight: 600;
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+  .flip-card {
+    width: 100%;
+    max-width: 400px; 
+   margin: auto;
+   margin-top: 60px;
+    
+  }
+
+  .flashcard{
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+  }
+  .size svg{
+    width: 20px;
+  }
+  .small span svg{
+      width: 15px;
+  }
+  .text-small{
+    font-size: 10px;
+  }
+
+  .small-shadow{
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-container svg{
+    width: 40px;
+  }
+
+  .small-svg svg{
+    width: 20px;
+  }
+  .sm-font{
+    font-size: 18px;
+  }
+
+  .content{
+    font-size: 30px;
+  }
+ 
+  .tabs{
+      width: 200px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+  }
+
+  .nav{
+    font-size: 1rem;
+  }
+
+  .nav-sub li a{
+    font-size: 12px;
+  }
+  .nav-sub li svg{
+    width: 15px;
+  }
+}
+

@@ -1,8 +1,34 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+### Landing Page Template in React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Project Description:**
+   - This landing page is a simple React application showcasing various features.
+   
+2. **Tech Stack:**
+   - React
+   - JavaScript
+   - HTML/CSS
+   - Tailwind CSS (for styling)
+   
+3. **Instructions to Clone and Run the Project:**
+   - Make sure you have Node.js installed on your system.
+   - Open your terminal and navigate to the directory where you want to clone the project.
+   - Run the following command to clone the project:
+     ```
+     git clone https://github.com/DeveloperAnilKumar/hyggex-digital.git
+     ```
+   - Navigate into the cloned project directory:
+     ```
+     cd <project_directory>
+     ```
+   - Install dependencies:
+     ```
+     npm install
+     ```
+   - Run the development server:
+     ```
+     npm start
+     ```
+   - Open your browser and visit `http://localhost:5173/` to view the landing page.
+   
